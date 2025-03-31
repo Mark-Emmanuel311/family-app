@@ -6,7 +6,7 @@ let vissible = menuWidth && 1;
 const popup = document.getElementById("popup");
 const overlay = document.getElementById("overlay");
 
-fetch('../pages/manage.html')
+fetch('../pages/upcoming-events.html')
 .then(response => response.text())
 .then(data => main.innerHTML = data)
 
@@ -83,7 +83,7 @@ function hideShowMenu(){
     
     function openChat(element){
         if(element == 'main'){
-            console.log('Main chat')
+            alert('coming soon, view those other chats')
         }else{
             const user = element.querySelector('div').getAttribute('id');
             fetch('./chat.html')
