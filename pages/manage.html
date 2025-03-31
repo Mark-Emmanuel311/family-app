@@ -43,7 +43,23 @@
         <h3>👥 Add Members</h3>
     </div>
     <form id="membersContent" method="POST" action="#" class="content">
-        <input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text">
+        <input type="text" name="name" required placeholder="Full Name">
+        <input type="text" name="common-name" required placeholder="Popular Name">
+        <label for="date">Date Of Birth</label>
+        <input id="date" required type="date" required>
+        <input type="text" required placeholder="Home Place">
+        <input type="text" required placeholder="Current Place of Residence" name="residence">
+        <input type="number" placeholder="Phone Number">
+        <input type="email" placeholder="Email address" name="email">
+        <input type="text" placeholder="Father's Name or email address">
+        <input type="text" placeholder="Mother's name or Email address">
+        <select name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <textarea name="desc" placeholder="Add a little description about this member"></textarea>
+        <label for="prof">Upload a picture</label>
+        <input type="file" id="prof" accept="image/*">
         <input type="submit" value="Add">
     </form>
 </div>
