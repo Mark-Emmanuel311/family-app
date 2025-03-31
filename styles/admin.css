@@ -1,0 +1,84 @@
+h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.management {
+    max-width: 700px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.section {
+    background: #1e1e1e;
+    color: #ffffff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.section:hover {
+    background: #292929;
+}
+
+/* Form Styling */
+.content {
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
+    display: none;
+    margin-bottom: 15px;
+}
+
+/* Show section when active */
+.content.active {
+    display: block;
+}
+
+/* Labels */
+form label {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #bbbbbb;
+}
+
+/* Inputs and textarea */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #222;
+    color: #e0e0e0;
+    transition: 0.2s;
+}
+
+form input:focus,form textarea:focus {
+    outline: none;
+    border-color: #5e9cff;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: #5e9cff;
+    color: #121212;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #4a8ddf;
+}

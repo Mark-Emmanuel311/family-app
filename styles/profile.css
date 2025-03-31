@@ -1,0 +1,77 @@
+.profile {
+    background: #1e1e1e;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.image-card {
+    width: 100px;
+    height: 100px;
+    background: #ff9500;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile label {
+    font-size: 14px;
+    color: #bbb;
+    text-align: start;
+    margin: 0;
+}
+
+/* Social Media */
+.profile .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile .social-links a {
+    text-decoration: none;
+    color: #ff9500;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.profile .social-links a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* About Section */
+.profile h5 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff9500;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #ddd;
+    text-align: justify;
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .profile {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .image-card {
+        width: 80px;
+        height: 80px;
+    }
+}

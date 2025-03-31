@@ -1,0 +1,135 @@
+.tree{
+    padding-top: 30px;
+}
+
+.history{
+    padding: 30px 15px;
+    display: none;
+}
+
+.tree ul{
+    padding-top: 20px;
+    position: relative;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    display: flex;
+  }
+  .tree li{
+    float: left;
+    text-align: center;
+    list-style: none;
+    position: relative;
+    padding: 40px 5px 0px 5px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+  }
+  .tree li::before, .tree li::after{
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: 50%;
+    border-top: 1px solid #ff9500;
+    width: 50%;
+    height: 10px;
+  }
+  .tree li::after{
+    right: auto;
+    left: 50%;
+    border-left:  1px solid #ff9500;
+  }
+  .tree li:only-child::after, .tree li:only-child::before{
+    display: none;
+  }
+  .tree li:only-child{
+    padding-top: 29px;
+  }
+  .tree li:first-child::before, .tree li:last-child::after{
+    border: 0 none;
+  }
+  .tree li:last-child::before{
+    border-right: 1px solid #ff9500;
+    border-radius: 0 10px 0 0;
+    -webkit-border-radius: 0 10px 0 0;
+    -moz-border-radius: 0 10px 0 0;
+  }
+  .tree li:first-child::after{
+    border-radius:10px 0 0 0;
+    -webkit-border-radius:10px 0 0 0;
+    -moz-border-radius: 10px 0 0 0;
+  }
+  .tree ul ul::before{
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 50%;
+    border-left: 1px solid #ff9500;
+    width: 0;
+    height: 10px;
+  }
+  .tree img{
+    height: 50px;
+    border-radius: 50%;
+  }
+  .tree span{
+    text-decoration: none;
+    box-shadow: 0 4px 10px #7a5f5f;
+    background-image: url('../images/profile.jpg');
+    cursor: pointer;
+    background-size: cover;
+    padding: 20px 30px;
+    border-radius: 50%;
+  }
+
+  .tree span button{
+    position: absolute;
+    text-decoration: none;
+    margin: -25px 0px 0px 25px;
+    background: transparent;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-style: italic;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease-in, visibility 0.6s ease-in;
+}
+
+.tree span:hover button, .tree span.active button,.tree span button:hover{
+    opacity: 1;
+    visibility: visible;
+}
+
+.tree span button:hover{
+    color: #ff9500;
+}
+  .toggle{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  @media (min-width: 680px) {
+    .toggle{
+        width: 70%;
+    }
+    
+  }
+  .toggle button{
+    background: #1e1e1e;
+    margin-top: 5px;
+    padding: 5px;
+    width: 40%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .toggle button:active, .toggle button:hover{
+    background-color: #ff9500;
+  }

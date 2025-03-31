@@ -1,0 +1,56 @@
+
+.leadership-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    max-height: 90vh;
+    overflow: auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+.leader-card {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.leader-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.leader-info {
+    display: flex;
+    flex-direction: column;
+}
+.leader-info a {
+    color: #ff9500;
+    text-decoration: none;
+}
+.vote{
+    float: right;
+    margin: 5px 5px 0 0; 
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(80, 82, 80);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.vote:hover, .create:hover{
+    background-color: #ff9500;
+    color: white;
+}
+button:disabled {
+    background: #555;
+    color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.6;
+}

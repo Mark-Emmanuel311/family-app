@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #121212;
+}
+
+.login {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.login p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: #fff;
+    outline: none;
+}
+
+.login button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff9500;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login button:hover {
+    background: #e68400;
+}
+
+.login p:last-child {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #bbb;
+}
+
+.login p button {
+    background: none;
+    border: none;
+    color: #ff9500;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.login p button:hover {
+    color: white;
+}
+
+.login h1 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.icon-container {
+    font-size: 50px;
+    color: #ff9500;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #2a2a2a;
+    border-radius: 15px;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.input-group i {
+    color: #ff9500;
+    margin-right: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #bbb;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}

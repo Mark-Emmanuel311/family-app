@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Updates</title>
+</head>
+<body>
+    <h2>Admin Dashboard</h2>
+<div class="management">
+    <div class="section" onclick="toggleSection('eventsContent')">
+        <h3>📅 Upcoming Events</h3>
+    </div>
+    <form id="eventsContent" method="POST" action="#" class="content">
+        <label for="title">Event Title</label><input type="text" required id="title" placeholder="e.g Annual Family Gathering">
+        <label for="date">Event Date</label><input id="date" required type="date">
+        <label for="venue">Venue</label><input id="venue" required type="text" placeholder="e.g Kokuro Grandpa's Home">
+        <label for="desc">Description</label>
+        <textarea id="desc" required placeholder="e.g A gathering of all family members to celebrate our heritage, share stories, and strengthen bonds."></textarea>
+        <input type="submit" value="SET">
+    </form>
+
+    <div class="section" onclick="toggleSection('alertsContent')">
+        <h3>🚨 Make Announcements</h3>
+    </div>
+    <form id="alertsContent" method="POST" action="#" class="content">
+       <textarea id="desc" required placeholder="Type your message here..."></textarea>
+        <input type="submit" value="Publish">
+    </form>
+
+
+    <div class="section" onclick="toggleSection('contributionsContent')">
+        <h3>💰 Create Contribution</h3>
+    </div>
+    <form id="contributionsContent" method="POST" action="#" class="content">
+        <label for="title">Contribution Title</label>
+        <input type="text" required id="title" placeholder="e.g Monthly Contributions">
+        <input type="submit" value="Create">
+    </form>
+
+
+    <div class="section" onclick="toggleSection('membersContent')">
+        <h3>👥 Add Members</h3>
+    </div>
+    <form id="membersContent" method="POST" action="#" class="content">
+        <input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text"><input type="text">
+        <input type="submit" value="Add">
+    </form>
+</div>
+</body>
+</html>

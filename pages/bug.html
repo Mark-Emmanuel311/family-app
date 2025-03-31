@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Bug</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bug-report-container">
+        <h2>Report a bug</h2>
+        <textarea id="bugDescription" placeholder="Describe the problem..."></textarea>
+        <h4>You can upload a screenshot (Optional)</h4>
+        <input type="file" id="bugImage" accept="image/*">
+        <button class="submit-btn" onclick="submitBug()">Submit</button>
+    </div>
+
+    <script>
+        function submitBug() {
+            const description = document.getElementById("bugDescription").value;
+            const image = document.getElementById("bugImage").files[0];
+
+            if (!description) {
+                alert("Please enter a bug description.");
+                return;
+            }
+
+            alert("Bug report submitted successfully!");
+            document.getElementById("bugDescription").value = "";
+            document.getElementById("bugImage").value = "";
+        }
+    </script>
+</body>
+</html>

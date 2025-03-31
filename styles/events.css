@@ -1,0 +1,27 @@
+
+
+.events-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+.event-card {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+.event-card h3 {
+    color: #ff9500;
+    margin-bottom: 10px;
+}
+.event-card p {
+    color: #bbb;
+    margin: 5px 0;
+}

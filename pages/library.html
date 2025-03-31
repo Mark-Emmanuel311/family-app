@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Library</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+<button class="create" onclick="openPopup('create album')">Add New Album</button>
+    <h2>Community Library</h2>
+    <div class="album-container">
+        <div class="album" onclick="toggleAlbum(this)">
+            <img src="../images/profile.jpg" alt="Album Cover">
+            <div class="album-name">Vacation 2024</div>
+            <div class="album-images">
+                <img src="../images/profile.jpg" alt="Photo 1">
+                <img src="../images/profile.jpg" alt="Photo 2">
+                <img src="../images/profile.jpg" alt="Photo 3">
+            </div>
+        </div>
+        <div class="album" onclick="toggleAlbum(this)">
+            <img src="../images/profile.jpg" alt="Album Cover">
+            <div class="album-name">Grandparent’s Anniversary</div>
+            <div class="album-images">
+                <img src="../images/profile.jpg" alt="Photo 4">
+                <img src="../images/profile.jpg" alt="Photo 5">
+                <img src="../images/profile.jpg" alt="Photo 6">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

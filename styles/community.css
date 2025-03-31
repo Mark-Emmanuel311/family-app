@@ -1,0 +1,76 @@
+
+.people{
+    display: flex;   
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    height: 90vh;
+    overflow: scroll;
+    padding-top: 20px;
+   }
+
+.user-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.user-card:hover {
+    box-shadow: 0 4px 15px rgba(255, 149, 0, 0.4);
+}
+
+.user-card .image {
+    width: 80px;
+    height: 80px;
+    background: #ff9500;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.user-card label {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.user-card a {
+    text-decoration: none;
+    color: #ff9500;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.user-card a:hover {
+    color: white;
+}
+   /* Responsive */
+   @media (max-width: 480px) {
+       .people{
+           height: 80vh;
+       }
+   
+       .user-card {
+           width: 90%;
+           padding: 15px;
+       }
+   
+       .user-card .image {
+           width: 70px;
+           height: 70px;
+       }
+   }
+
+   .user-card button{
+    background-color: transparent;
+    border: none;
+    color: #ff9500;
+   }

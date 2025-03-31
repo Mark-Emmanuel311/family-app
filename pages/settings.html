@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+</head>
+<body>
+    <div class="settings-container">
+        <h2>Settings</h2>
+        <div class="form-group">
+            <label for="profile-pic">Change Profile Picture</label>
+            <input type="file" id="profile-pic" accept="image/*">
+        </div>
+        <div class="form-group">
+            <label for="name">Update Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="email">Update Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="old-password">Enter Old Password</label>
+            <input type="password" id="old-password" placeholder="Old password">
+        </div>
+        <div class="form-group">
+            <label for="new-password">Enter New Password</label>
+            <input type="password" id="new-password" placeholder="New password">
+        </div>
+        <div class="form-group">
+            <label for="phone">Edit Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group">
+            <label for="residence">Current Place of Residence</label>
+            <input type="text" id="residence" placeholder="Enter your location">
+        </div>
+        <div class="form-group">
+            <label for="social-links">Social Media Links</label>
+            <input type="text" id="social-links" placeholder="Enter your social media links">
+        </div>
+        <div class="form-group toggle-switch">
+            <label for="notifications">Enable Notifications</label>
+            <input type="checkbox" id="notifications">
+        </div>
+        <div class="form-group">
+            <label for="theme">Select Theme</label>
+            <select id="theme">
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+            </select>
+        </div>
+        <button onclick="saveSettings()" class="save-btn">Save Changes</button>
+    </div>
+</body>
+</html>

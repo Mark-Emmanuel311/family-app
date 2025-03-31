@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #121212;
+    color: #fff;
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+header {
+    width: 100%;
+    background: #1e1e1e;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    color: #ff9500;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+i img{
+height: 30px;
+border-radius: 50%;
+position: relative;
+top: 5px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    background: #1e1e1e;
+}
+
+header ul li {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+h2{
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Menu Icon */
+header ul li i {
+    color: #ff9500;
+    margin-right: 5px;
+}
+
+header ul li i:hover{
+    color: #fff;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid green;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none;
+}
+
+main{
+    height: 90vh;
+    overflow: scroll;
+}
+
+aside{
+    display: flex;
+    background: #2a2a2a;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    float: left;
+    width: 250px;
+    height: 95vh;
+    overflow: scroll;
+    z-index: 2;
+    flex-direction: column;
+    gap: 12px;
+    transition: .5s;
+}
+
+aside i{
+    color: #ff9500;
+    margin-left: 30px;
+    width: 80%;
+    padding: 8px;
+}
+
+aside i:hover{
+    color: #fff;
+    cursor: pointer;
+    background-color: black;
+}
+
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #4b4a4a;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s ease-in;
+    z-index: 2;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: none;
+}
+
+.popup > button:first-child{
+    width: 50px;
+    padding: 2px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: .5px .5px 2px #ff9500;
+    position: absolute;
+    top: 8%;
+}
+
+.popup > button:hover:first-child{
+    color: #ff9500;
+}
+
+.popup input {
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+.popup button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(7, 7, 7);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.popup .profile{
+    max-height: 550px;
+}
+
+.popup p{
+    border: .1px dashed black;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    header ul {
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header ul li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 15px;
+    }
+
+    header ul li ul {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+    aside{
+        position: absolute;
+        width: 0;
+        overflow: hidden;
+    }
+    .popup{
+        width: 90vw;
+    }
+    .popup > button:first-child{
+        margin-left: -5px;
+        position: inherit;
+        z-index: 1;
+    }
+
+    .popup .profile{
+        max-height: 80vh;
+        width: 90vw;
+        max-width: 500px;
+        position: relative;
+        left: -8%;
+    }
+}
